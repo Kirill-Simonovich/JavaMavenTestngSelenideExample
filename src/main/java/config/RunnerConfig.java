@@ -21,11 +21,9 @@ public class RunnerConfig {
         if (browserVersion != null) {
             Configuration.browserVersion = browserVersion;
         }
-        if (!modeDebug) {
             Configuration.remote = "http://localhost:4444/wd/hub";
             Configuration.browserCapabilities.setCapability("enableVNC", false);
             Configuration.browserCapabilities.setCapability("enableVideo", false);
-        }
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
                 .savePageSource(true));
