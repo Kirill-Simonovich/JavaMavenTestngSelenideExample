@@ -14,7 +14,7 @@ public class WikipediaLanguagesTest extends BasePage {
     @DataProvider
     public Object[][] languageCodes() {
         return new Object[][]{
-                {"EN"}, {"JA"}, {"RU"}, {"IT"}, {"PT"}, {"ES"}, {"DE"}, {"ZH"}, {"FR"}, {"PL"}
+                {"EN"}, {"JA"}, {"RU"}, {"IT"}, {"PT"}, {"ES"}, {"DE"}, {"FR"}, {"PL"}
         };
     }
 
